@@ -1,0 +1,18 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+#countdown {
+  font-weight: bold;
+}
+
+/* Animasi fade-in */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan | Imam & Aisyah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="text-center p-5 bg-light">
+  <h1 class="display-4">Imam & Aisyah</h1>
+  <p class="lead">Kami mengundang Anda untuk hadir di hari bahagia kami</p>
+  <div id="countdown" class="mt-4 fs-3 text-primary"></div>
+</section>
+
+<!-- Acara Section -->
+<section class="container my-5 fade">
+  <h2 class="text-center mb-4">Hitung Mundur ke Resepsi</h2>
+  <div class="text-center fs-3 text-danger" id="resepsiCountdown"></div>
+</section>
+<!-- Acara Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Detail Acara</h2>
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h4>Akad Nikah</h4>
+      <p>Minggu, 20 Juli 2025<br>Pukul 09.00 WIB<br>Gedung Serbaguna PSDH</p>
+    </div>
+    <div class="col-md-6 text-center">
+      <h4>Resepsi</h4>
+      <p>Minggu, 20 Juli 2025<br>Pukul 11.00 - 14.00 WIB<br>Gedung Serbaguna PSDH</p>
+    </div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Galeri Kami</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <img src="images/galeri1.jpg" class="img-fluid rounded">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/galeri2.jpg" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lokasi -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Lokasi</h2>
+  <div class="text-center">
+    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Musik -->
+<audio id="weddingMusic" loop autoplay hidden>
+  <source src="https://cdn.pixabay.com/download/audio/2023/03/08/audio_6fe2f7507c.mp3?filename=romantic-calm-piano-14499.mp3" type="audio/mp3">
+</audio>
+
+<!-- RSVP -->
+<section class="container py-5 fade">
+  <h2 class="text-center mb-4">Konfirmasi Kehadiran (RSVP)</h2>
+  <form id="rsvpForm">
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Nama Anda" required>
+    </div>
+    <div class="mb-3">
+      <select class="form-control" required>
+        <option value="">Apakah Anda akan hadir?</option>
+        <option value="yes">Ya, saya akan hadir</option>
+        <option value="no">Maaf, saya tidak bisa hadir</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-success">Kirim</button>
+  </form>
+  <div id="rsvpEntries" class="mt-4"></div>
+</section>
+
+<!-- Buku Tamu -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Ucapan & Doa</h2>
+    <form id="guestbookForm">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Nama Anda" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" placeholder="Ucapan dan Doa" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+    <div id="guestbookEntries" class="mt-4"></div>
+  </div>
+</section>
+
+<!-- Kirim Hadiah -->
+<section class="container py-5 fade">
+  <h2 class="text-center mb-4">Kirim Hadiah</h2>
+  <p class="text-center">Jika Anda ingin mengirim hadiah, berikut adalah rekening kami:</p>
+  <div class="text-center mb-3">
+    <p><strong>BNI - 1234567890</strong><br>a.n Imam Khoiru & Aisyah</p>
+    <img src="images/qr-code.png" alt="QR Code" class="img-fluid" style="max-width:150px;">
+  </div>
+  <form class="mx-auto" style="max-width: 400px;">
+    <input type="text" class="form-control mb-2" placeholder="Nama Pengirim" required>
+    <input type="text" class="form-control mb-2" placeholder="Jumlah Transfer" required>
+    <textarea class="form-control mb-2" placeholder="Ucapan" required></textarea>
+    <button type="submit" class="btn btn-warning">Kirim Konfirmasi</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-dark text-white">
+  <p>© 2025 Imam & Aisyah. Powered by ❤️</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
